@@ -1,0 +1,72 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - college_name
+  - college_location
+  - college_faculty
+  - college_cse_hod
+  - college_courses
+  - college_principal
+  - ask_department_info
+  - college_information
+  - college_library_resource
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_department_info:
+  - text: "Our department offers courses in various fields. Could you specify which department or program you're interested in?"
+
+  utter_college_name:
+  - text: "KLS Vishwanathrao Deshpande Institute of Technology"
+
+  utter_college_location:
+  - text: "Udyog Vidya Nagar, Dandeli Rd, Haliyal, Karnataka 581329"
+
+  utter_college_faculty:
+  - text: "There are 14 teachers in CSE department.
+  they are:Dr. Poornima Raikar,Dr. Venkatesh Shankar,Prof. Abhay S. Inchal,Prof. Farzana N. Nadaf,Prof. Jayashree Shedbalkar,Dr.T. R. Naveenkumar,Prof.Ravindra Patil,Prof.Pranesh Kulkarni,Prof.Kartik J Kulkarni,Prof.Girish Shivanagudi,Prof.Bhagat Gurunath Inamdar"
+
+  utter_college_cse_hod:
+  - text: "Dr. Shrinivas Sirdeshpande"
+
+  utter_college_courses:
+  - text: "There are 10 courses offered in CSE department. They are:
+         Data structures,Database management system,Operating system,,Microcintroller,C language,C++ language,Python language,Java"
+
+  utter_college_principal:
+  - text: "Dr. Vadiraj.A.Kulkarni"
+
+  utter_college_information:
+  - text: "KLS Vishwanathrao Deshpande Institute of Technology (also known as KLS VDIT) was established in 2004 by the Karnatak Law Society. It is a private institute located in Haliyal, Karnataka. KLS Vishwanathrao Deshpande Institute of Technology has been accredited by the NAAC with Grade ‘A’. It is also approved by the All India Council for Technical Education (AICTE) and the National Board of Accreditation (NBA). Furthermore, KLS VDIT is affiliated with the Visvesvaraya Technological University (VTU)"
+
+  utter_college_library_resource:
+  - text: "Our library provides access to various online resources, including e-books, articles, and tutorials"
+   
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
