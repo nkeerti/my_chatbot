@@ -1,0 +1,64 @@
+version: "3.1"
+
+rules:
+
+- rule: Say hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Provide department info
+  steps:
+  - intent: ask_department_info
+  - action: utter_ask_department_info
+
+- rule: Provide college name
+  steps:
+  - intent: college_name
+  - action: utter_college_name
+
+- rule: Provide college location
+  steps:
+  - intent: college_location
+  - action: utter_college_location
+
+- rule: Provide college faculty
+  steps:
+  - intent: college_faculty
+  - action: utter_college_faculty
+
+- rule: Provide college principal info
+  steps:
+  - intent: college_principal
+  - action: utter_college_principal
+
+- rule: Provide college cse hod
+  steps:
+  - intent: college_cse_hod
+  - action: utter_college_cse_hod
+
+- rule: Provide college course
+  steps:
+  - intent: college_courses
+  - action: utter_college_courses
+
+- rule: Provide college information
+  steps:
+  - intent: college_information
+  - action: utter_college_information
+
+- rule: Provide college library
+  steps:
+  - intent: college_library_resource
+  - action: utter_college_library_resource
+
